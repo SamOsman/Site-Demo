@@ -14,7 +14,8 @@ module.exports = {
         aliases: {
           styles: `src/styles`,
           config: `config/`,
-          "@components": "src/components/"
+          "@components": "src/components/",
+          "@util": "src/util/"
         }
       }
     }
