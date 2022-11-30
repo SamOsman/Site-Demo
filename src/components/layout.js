@@ -1,5 +1,5 @@
 import React from 'react'
-import tw, { GlobalStyles } from 'twin.macro'
+import { GlobalStyles } from 'twin.macro'
 import { layoutPadding } from "styles/baseStyles"
 
 
