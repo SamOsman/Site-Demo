@@ -1,5 +1,6 @@
 import React from 'react'
-import { GlobalStyles } from 'twin.macro'
+import tw, { GlobalStyles } from 'twin.macro'
+
 import { layoutPadding } from "styles/baseStyles"
 
 
@@ -12,11 +13,14 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <main css={[layoutPadding]}>
-                <GlobalStyles />
-                {children}
-            </main>
-            <Footer />
+            <div css={[tw`bg-white w-full h-[800px] z-10`]}>
+                <main css={[layoutPadding]}>
+                    <GlobalStyles />
+                    {children}
+                </main>
+            </div>
+            <div css={[tw`bg-none w-full h-[200px] z-10`]}></div>
+            <Footer/>
         </>
 
     )

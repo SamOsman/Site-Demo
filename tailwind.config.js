@@ -9,9 +9,8 @@ module.exports = {
         'orange': '#F5C3AB',
         'green': '#ABF5AB',
         'yellow': '#F5E5AB',
-        'gray-dark': '#273444',
-        'gray': '#8492a6',
-        'gray-light': '#d3dce6',
+        'black-olive': '#40423E',
+        'white': '#ffffff'
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],

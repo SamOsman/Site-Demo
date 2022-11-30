@@ -12,3 +12,9 @@ export const h1 = () => {
         tw` text-5xl md:(text-4xl) xl:(text-4xl)`
     )
 } 
+
+export const h2 = () => {
+    return (
+        tw` text-3xl md:(text-3xl) xl:(text-3xl)`
+    )
+} 
