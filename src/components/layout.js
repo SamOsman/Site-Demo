@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <div css={[tw`bg-white w-full h-[800px] z-10`]}>
+            <div css={[tw`bg-white w-full z-10`]}>
                 <main>
                     <GlobalStyles />
                     {children}

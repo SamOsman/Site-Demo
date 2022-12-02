@@ -9,12 +9,20 @@ export const layoutPadding = () => {
 
 export const h1 = () => {
     return (
-        tw` text-5xl md:(text-4xl) xl:(text-4xl)`
+        tw` text-5xl md:(text-4xl) `
     )
 } 
 
 export const h2 = () => {
     return (
-        tw` text-3xl md:(text-3xl) xl:(text-3xl)`
+        tw` text-3xl md:(text-3xl)`
     )
 } 
+
+export const h3 = () => {
+    return (
+        tw` text-xl md:(text-2xl) `
+    )
+}
+
+export const sectionTitleStyles = tw`font-semibold mt-8 mb-8 md:(mt-0 mb-6)`
