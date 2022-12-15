@@ -21,7 +21,7 @@ export const h2 = () => {
 
 export const h3 = () => {
     return (
-        tw` text-xl md:(text-2xl) `
+        tw`uppercase text-xl md:(text-2xl) `
     )
 }
 

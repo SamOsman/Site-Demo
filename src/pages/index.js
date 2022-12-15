@@ -13,27 +13,51 @@ import img1 from './../images/bg.jpeg'
 import newWindow from './../images/new-window.png'
 import dribble from './../images/dribble.png'
 import behance from './../images/behance.png'
+import linkedIn from './../images/linkedin.png'
+import Github from './../images/github.png'
+import resume from './../../public/static/SamOsman_FrontEndDev_Resume.pdf'
 
 const home = () => {
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
 
   const demoSquareData = [
     {
       'title': 'test title 1',
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
-      'img': img1
+      'img': img1,
+      'classname':'reveal fade-bottom'
     },
     {
       'title': 'test title 2',
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
-      'img': img1
+      'img': img1,
+      'classname':'reveal fade-bottom'
     },
     {
       'title': 'test title 3',
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
-      'img': img1
+      'img': img1,
+      'classname':'reveal fade-bottom'
     }
   ]
 
@@ -45,6 +69,14 @@ const home = () => {
     {
       'url': "https://www.behance.net/samosman1",
       'img': behance
+    },
+    {
+      'url': "https://www.linkedin.com/in/sam-osman/",
+      'img': linkedIn
+    },
+    {
+      'url': "https://github.com/SamOsman/",
+      'img': Github
     }
   ]
 
@@ -66,6 +98,7 @@ const home = () => {
               subTitle={item.subTitle}
               url={item.url}
               img={item.img}
+              classname={item.classname}
             />
 
           ))}
@@ -75,12 +108,12 @@ const home = () => {
       <div css={[tw`bg-black-olive-light`]}>
         <section css={[layoutPadding]}>
           <h2 id='resume' css={[h3, sectionTitleStyles]}>Resume</h2>
-          <Link to='' css={[tw`underline flex flex-row items-center mb-8`]}>
+          <a href={resume} target="_blank" css={[tw`underline flex flex-row items-center mb-8`]}>
             <p>Download my Resume here</p>
             <span css={[tw`ml-2`]}>
               <img css={[tw`w-5`]} src={newWindow} />
             </span>
-          </Link>
+          </a>
           <div css={[tw`flex flex-row gap-6 mb-8 md:(mb-2)`]}>
             {contactIcon.map((item, key) => (
               <ContactIcon
@@ -94,7 +127,7 @@ const home = () => {
       </div>
 
       <section css={[layoutPadding]}>
-        <h2 id='contact' css={[h3, sectionTitleStyles]}>contact</h2>
+        <h2 id='contact' css={[h3, sectionTitleStyles]}>Contact</h2>
         <p css={[tw`mb-8`]}>sam.gl.osman@gmail.com</p>
       </section>
 

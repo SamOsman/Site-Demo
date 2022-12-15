@@ -3,10 +3,10 @@ import tw from 'twin.macro'
 import { Link } from 'gatsby'
 
 
-const DemoSquare = ({ title, subTitle, url, img, additionalStyles }) => {
+const DemoSquare = ({ title, subTitle, url, img, classname, additionalStyles }) => {
     console.log('Image Url:', img)
     return (
-        <Link to={url}>
+        <Link to={url} class={classname}>
             <div css={[tw`rounded-4xl bg-black-olive-light drop-shadow-xl max-w-[500px] min-h-[440px]`]}>
 
                 <img src={img} css={[tw`rounded-tl-4xl rounded-tr-4xl`]} />
