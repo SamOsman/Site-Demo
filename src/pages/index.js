@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import tw from "twin.macro"
 
 //components
@@ -15,18 +15,18 @@ import dribble from './../images/dribble.png'
 import behance from './../images/behance.png'
 import linkedIn from './../images/linkedin.png'
 import Github from './../images/github.png'
-import resume from './../../public/static/SamOsman_FrontEndDev_Resume.pdf'
+import resume from './../downloads/SamOsman_FrontEndDev_Resume.pdf'
 
 const home = () => {
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-  
+
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 150;
-  
+
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -34,8 +34,10 @@ const home = () => {
       }
     }
   }
-  
-  window.addEventListener("scroll", reveal);
+
+  useEffect(() => {
+    document.addEventListener('scroll', reveal)
+  })
 
   const demoSquareData = [
     {
@@ -43,21 +45,21 @@ const home = () => {
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
       'img': img1,
-      'classname':'reveal fade-bottom'
+      'classname': 'reveal fade-bottom'
     },
     {
       'title': 'test title 2',
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
       'img': img1,
-      'classname':'reveal fade-bottom'
+      'classname': 'reveal fade-bottom'
     },
     {
       'title': 'test title 3',
       'subTitle': 'lorum ipsum dolor imut',
       'url': "/testUrl",
       'img': img1,
-      'classname':'reveal fade-bottom'
+      'classname': 'reveal fade-bottom'
     }
   ]
 
