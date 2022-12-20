@@ -1,7 +1,7 @@
 import React from "react"
 import tw from 'twin.macro'
 
-import {layoutPadding, h2} from "styles/baseStyles"
+import {layoutPadding, h2} from "./../styles/baseStyles"
 
 
 const footer = () => {
