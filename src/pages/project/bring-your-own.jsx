@@ -8,8 +8,10 @@ import { layoutPadding, sectionTitleStyles } from "styles/baseStyles"
 
 const BringYourOwn = () => {
     return (
-        <Layout css={[layoutPadding]}>
-             <p>Page coming soon</p>
+        <Layout>
+            <div css={[layoutPadding]}>
+                <p>Page coming soon</p>
+            </div>
         </Layout>
     )
 }

@@ -42,21 +42,21 @@ const HomePage = () => {
     {
       'title': 'Bring Your Own',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/project/bring-your-own.jsx",
+      'url': "/project/bring-your-own",
       'img': img1,
       'classname': 'reveal fade-bottom'
     },
     {
       'title': 'Maynooth Furniture',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/project/maynooth-furninture.jsx",
+      'url': "/project/maynooth",
       'img': img1,
       'classname': 'reveal fade-bottom'
     },
     {
       'title': 'Organize',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/project/organize.jsx",
+      'url': "/project/organize",
       'img': img1,
       'classname': 'reveal fade-bottom'
     }
