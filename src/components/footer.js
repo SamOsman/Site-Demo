@@ -4,7 +4,7 @@ import tw from 'twin.macro'
 import {layoutPadding, h2} from "./../styles/baseStyles"
 
 
-const footer = () => {
+const Footer = () => {
 
     const footerPostion = tw`fixed bottom-0 w-full h-[200px] z-[-1]`
 
@@ -14,4 +14,4 @@ const footer = () => {
         </footer>
     )
 }
-export default footer
+export default Footer

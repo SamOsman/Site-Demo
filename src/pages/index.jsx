@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import tw from "twin.macro"
 
 //components
-import Layout from './../components/Layout'
+import Layout from '../components/Layout'
 import { layoutPadding, h3, sectionTitleStyles } from "styles/baseStyles"
-import DemoSquare from "./../components/DemoSquare"
-import ContactIcon from './../components/contactIcon'
+import DemoSquare from "../components/DemoSquare"
+import ContactIcon from '../components/contactIcon'
 
 //images
 import img1 from './../images/bg.jpeg'
@@ -16,7 +16,7 @@ import linkedIn from './../images/linkedin.png'
 import Github from './../images/github.png'
 import resume from './../downloads/SamOsman_FrontEndDev_Resume.pdf'
 
-const home = () => {
+const HomePage = () => {
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -36,27 +36,27 @@ const home = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', reveal)
-  })
+  }, [])
 
   const demoSquareData = [
     {
-      'title': 'test title 1',
+      'title': 'Bring Your Own',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/testUrl",
+      'url': "/project/bring-your-own.jsx",
       'img': img1,
       'classname': 'reveal fade-bottom'
     },
     {
-      'title': 'test title 2',
+      'title': 'Maynooth Furniture',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/testUrl",
+      'url': "/project/maynooth-furninture.jsx",
       'img': img1,
       'classname': 'reveal fade-bottom'
     },
     {
-      'title': 'test title 3',
+      'title': 'Organize',
       'subTitle': 'lorum ipsum dolor imut',
-      'url': "/testUrl",
+      'url': "/project/organize.jsx",
       'img': img1,
       'classname': 'reveal fade-bottom'
     }
@@ -136,4 +136,4 @@ const home = () => {
   )
 }
 
-export default home
+export default HomePage

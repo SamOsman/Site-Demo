@@ -1,7 +1,7 @@
 import React from "react"
 import tw from 'twin.macro'
 
-const button = ({ styles, text }) => {
+const Button = ({ styles, text }) => {
 
     const buttonStyles = tw`my-4 py-4 px-6 bg-pink rounded-4xl`
 
@@ -17,4 +17,4 @@ const button = ({ styles, text }) => {
     )
 }
 
-export default button
+export default Button
