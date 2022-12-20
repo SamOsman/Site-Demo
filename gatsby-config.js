@@ -7,13 +7,14 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-alias-imports`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-alias-imports`,
       options: {
+        rootFolder: `src`,
         aliases: {
           styles: `src/styles`,
-          config: `config/`,
           components: "src/components/"    
         }
       }
