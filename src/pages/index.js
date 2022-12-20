@@ -2,11 +2,10 @@ import React, { useEffect } from 'react'
 import tw from "twin.macro"
 
 //components
-import Layout from '@components/Layout'
+import Layout from 'components/Layout'
 import { layoutPadding, h3, sectionTitleStyles } from "styles/baseStyles"
-import DemoSquare from "@components/DemoSquare"
-import { Link } from 'gatsby'
-import ContactIcon from '@components/contactIcon'
+import DemoSquare from "components/DemoSquare"
+import ContactIcon from 'components/contactIcon'
 
 //images
 import img1 from './../images/bg.jpeg'

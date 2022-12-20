@@ -2,7 +2,7 @@ import React from "react"
 import tw from "twin.macro"
 
 import { layoutPadding, h1 } from "styles/baseStyles"
-import Button from '@components/button'
+import Button from 'components/button'
 import { Link } from "gatsby"
 
 const Header = () => {
